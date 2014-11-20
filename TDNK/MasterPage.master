@@ -1,0 +1,110 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+<%@ Register TagPrefix="uc" TagName="Sliderpanel"  Src="~/Slider/panel/Slider.ascx" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Thảo dược nhập khẩu</title>
+   <link href="css/skin.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/menustyle.css" />
+    <link rel="stylesheet" type="text/css" href="css/Verticalstyles.css"/>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+       
+    </style>
+</head>
+<body style="background-image: url('/images/nen.jpg'); background-repeat: repeat;">
+    <form id="form1" runat="server" style="height: auto; min-height: 100%; background-color: white" class="fix_width">
+        <div class="fix_width" id="Wallpaper">
+            <div class="menu_top" style="background-image: url('/images/logo.jpg');height:100px">
+                
+            </div>
+            <!-------------main menu-------------->
+
+            <div id="skin_menu" class="clearafter" style="height:auto">
+                <div id='cssmenu' style="background:green">
+                    <ul>
+                        <li><a href='#'><span>Home</span></a></li>
+                        <li class='active has-sub'><a href='#'><span>Products</span></a>
+                            <ul>
+                                <li class='has-sub'><a href='#'><span>Product 1</span></a>
+                                    <ul>
+                                        <li><a href='#'><span>Sub Product</span></a></li>
+                                        <li class='last'><a href='#'><span>Sub Product</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class='has-sub'><a href='#'><span>Product 2</span></a>
+                                    <ul>
+                                        <li><a href='#'><span>Sub Product</span></a></li>
+                                        <li class='last'><a href='#'><span>Sub Product</span></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href='#'><span>About</span></a></li>
+                        <li class='last'><a href='#'><span>Contact</span></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!------------end mainmenu------------->
+
+        <!---------under menu----------------->
+        <div id="under_menu" class="fix_width" style="top:0;height:auto">
+            <uc:Sliderpanel runat="server" ID="uc1"  MinValue="1" MaxValue="10"/>
+        </div>
+        <!-------------end undermenu------------>
+
+        <!-------------main content------------->
+        <div class="fix_width" style="margin-top:0px">
+            <table class="auto-style1" style="vertical-align: top">
+                <tr>
+                    <td style="width: 200px; vertical-align: top;">
+                        <div style="background-image: url('images/circles-green.jpg'); font-family: 'Times New Roman', Times, serif; font-size: large; color: #FFFFFF; text-align: center; font-weight: 700;">Sản phẩm</div>
+                        <div style="background-position: center center; background-image: url('images/jGlzr.png'); background-repeat: repeat;">
+
+                            <div id='cssmenu1'>
+                                <ul>
+                                    <li><a href='#'>Thảo Dược OVATA</a></li>
+                                    <li><a href='#'>Thảo Dược NASULIN</a></li>                                 
+                                    <li><a href='#'>Thảo Dược CERY</a></li>
+                                    <li><a href='#'>Thảo Dược BILAND</a></li>
+                                    <li><a href='#'>Thảo Dược SECCO</a></li>
+                                    <li><a href='#'>Thảo Dược NAVA</a></li>
+                                    <li><a href='#'>Nhung Hươu Newzeland</a></li>
+                                    <li><a href='#'>Thảo Dược DAMI</a></li>
+                                    <li><a href='#'>Rượu SECCO</a></li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </td>
+
+                    <td  style="vertical-align: top">
+                        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                        </asp:ContentPlaceHolder>
+
+                    </td>
+                    <td style="width: 200px;vertical-align: top">
+                        <div style="background-image: url('images/circles-green.jpg'); font-family: 'Times New Roman', Times, serif; font-size: large; color: #FFFFFF; text-align: center; font-weight: 700;">Giỏ hàng của bạn</div>
+                        <div style="background-position: center center; background-image:url('images/jGlzr.png'); background-repeat: repeat;"></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!----------------end main content--------->
+
+
+    </form>
+    <!--------------------footer------------------------>
+    <footer style="background: green; height: 40px; bottom: 0" class="fix_width">
+    </footer>
+</body>
+</html>
+
