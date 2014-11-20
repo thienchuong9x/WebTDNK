@@ -12,6 +12,10 @@ public partial class SanPhamChung : System.Web.UI.UserControl
 
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        if (!IsPostBack)
+        {
+            DataListSanPham.DataSource = SqlLoaiSanPham.LoadSanPham(MaLoaiSP);
+            DataListSanPham.DataBind();
+        }
     }
 }
