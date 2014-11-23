@@ -4,12 +4,12 @@
         width: 100%;
     }
 </style>
-<asp:DataList ID="DataListSanPham" runat="server" RepeatDirection="Horizontal">
+<asp:DataList ID="DataListSanPham" runat="server" RepeatDirection="Horizontal" CellPadding="2" CellSpacing="1" HorizontalAlign="Center">
     <ItemTemplate>
         <table class="auto-style1">
             <tr>
                 <td colspan="2" style="text-align: center">
-                    <asp:Image ID="imgMinhHoa" runat="server" ImageUrl='<%# string.Format( "~/images/sanpham/{0}.jpg", Eval("MaSP"))%>'/>
+                    <asp:Image ID="imgMinhHoa" runat="server" ImageUrl='<%# string.Format( "~/images/sanpham/{0}.jpg", Eval("MaSP"))%>' />
                 </td>
             </tr>
             <tr style="overflow: hidden">

@@ -47,7 +47,7 @@ A.CommandButton:hover { font-size: 11px; font-weight : normal; color : #0033CC; 
 div.language-object span.Language img {width: 23px; }
 
 /*-------- design style --------*/
-.fix_width { width:960px; margin:0 auto; }
+.fix_width { width:990px; margin:0 auto; }
 .full_width { width:100%; margin:0 auto; }
 
 #skin_wrapper{ min-height:100%; position:relative; background:#ffffff; padding:0px; margin:0 auto;
