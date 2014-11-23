@@ -9,13 +9,13 @@
         <table class="auto-style1">
             <tr>
                 <td colspan="2" style="text-align: center">
-                    <asp:Image ID="imgMinhHoa" runat="server" />
+                    <asp:Image ID="imgMinhHoa" runat="server" ImageUrl='<%# string.Format( "~/images/sanpham/{0}.jpg", Eval("MaSP"))%>'/>
                 </td>
             </tr>
-            <tr>
+            <tr style="overflow: hidden">
                 <td>
                     <asp:Label ID="lblTenSp" runat="server" Text='<%# Eval("TenSP") %>'></asp:Label>
-                    &nbsp;- </td>
+                </td>
                 <td>
                     <asp:Label ID="lblMoTa" runat="server" Text='<%# Eval("MoTa") %>'></asp:Label>
                 </td>
