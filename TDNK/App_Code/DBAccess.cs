@@ -10,8 +10,8 @@ using System.Web;
 /// </summary>
 public class DBAccess
 {
-    //public static String cnnstr = @"Data Source=CHUONG-PC\SQLEXPRESS;Initial Catalog=thaoduoc;Persist Security Info=True;User ID=sa;Password=123456";
-    public static String cnnstr = "workstation id=thaoduoc.mssql.somee.com;packet size=4096;user id=thaoduocnhapkhau_SQLLogin_1;pwd=tqqth4vz1g;data source=thaoduoc.mssql.somee.com;persist security info=False;initial catalog=thaoduoc";
+    public static String cnnstr = @"Data Source=CHUONG-PC\SQLEXPRESS;Initial Catalog=thaoduoc;Persist Security Info=True;User ID=sa;Password=123456";
+    //public static String cnnstr = "workstation id=thaoduoc.mssql.somee.com;packet size=4096;user id=thaoduocnhapkhau_SQLLogin_1;pwd=tqqth4vz1g;data source=thaoduoc.mssql.somee.com;persist security info=False;initial catalog=thaoduoc";
     public DBAccess()
     {
         
